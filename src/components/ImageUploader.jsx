@@ -1,6 +1,14 @@
 import React from 'react'
 
-const ImageUploader = () => {
+const ImageUploader = ({ setImage, UploadHandler }) => {
+  
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      UploadHandler(file);
+    }
+  };
+
   return (
     <div className='h-[40vh] w-[90vw] border-2 border-gray-400 relative p-2 bg-black/30 rounded-lg'>
       <label htmlFor="fileUpload" className='w-full h-full font-bold transition-all duration-200 border-2 border-dashed border-gray-400/70 text-xl text-white hover:border-blue-400 hover:text-blue-400 active:text-white/50 flex flex-col items-center justify-center gap-4'>
@@ -9,7 +17,7 @@ const ImageUploader = () => {
         </svg>
         Click to upload an image
       </label>
-      <input id="fileUpload" type="file" accept='image/*' className='hidden'/>
+      <input id="fileUpload" type="file" accept='image/*' className='hidden' onChange={handleImageChange}/>
     </div>
   )
 }

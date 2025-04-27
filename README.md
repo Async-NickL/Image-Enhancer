@@ -1,12 +1,74 @@
-# React + Vite
+# Image Enhancer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application that enhances and upscales images using AI technology powered by the PicWish API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Upload images for AI-powered enhancement
+- Real-time processing status updates
+- View and download enhanced images
+- Modern, responsive UI built with React
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite 
+- Tailwind CSS
+- Axios for API communication
+- [PicWish API](https://picwish.com/) for image enhancement and processing
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+- PicWish API credentials (sign up at [picwish.com](https://picwish.com/))
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/image-enhancer.git
+cd image-enhancer
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn
+```
+
+3. Configure API credentials:
+   - Create a `src/utils/config.js` file with the following content:
+   ```javascript
+   export const API_KEY = 'your_api_key_here';
+   export const BASE_URL = 'https://techhk.aoscdn.com';
+   ```
+
+4. Start the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+## Usage
+
+1. Upload an image using the upload button
+2. Wait for the AI to process and enhance your image
+3. View and download the enhanced result
+
+## API Integration
+
+This application uses the [PicWish](https://picwish.com/) API for image enhancement. PicWish provides powerful AI-driven tools for:
+- Enhancing image quality
+- Unblurring images
+- Increasing resolution
+
+You'll need to obtain your own API credentials from PicWish to use this application.
+
+## Note on Configuration
+
+The `src/utils/config.js` file contains sensitive API information and is excluded from version control. Make sure to create this file with valid PicWish API credentials before running the application.
