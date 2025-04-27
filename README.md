@@ -29,7 +29,7 @@ A modern web application that enhances and upscales images using AI technology p
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/image-enhancer.git
+https://github.com/Async-NickL/Image-Enhancer.git
 cd image-enhancer
 ```
 
