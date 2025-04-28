@@ -28,7 +28,7 @@ const App = () => {
       <h1 className="text-2xl uppercase font-extrabold">
         AI-Powered Image Enhancer
       </h1>
-      <p className="mb-10 text-xs font-medium text-white/50">
+      <p className="mb-10 text-xs font-sans text-white/50">
         Enhance your images effortlessly with our advanced AI technology. It's
         free and no login is required. Simply upload your image to get started.
       </p>
